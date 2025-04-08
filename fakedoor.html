@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Lost Routes of Jorge Álvares</title>
+  <style>
+    body {
+      background-color: #f9f1e5;
+      font-family: 'Georgia', serif;
+      color: #3e2f1c;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      text-align: center;
+      max-width: 600px;
+      padding: 20px;
+      background-color: #fff8ef;
+      border: 2px solid #d4c4aa;
+      border-radius: 12px;
+      box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      font-size: 26px;
+      margin-bottom: 16px;
+    }
+    p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 24px;
+      font-size: 16px;
+      background-color: #7a5c3e;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #5d442c;
+    }
+    #thankYouMessage {
+      margin-top: 20px;
+      display: none;
+      color: #4a3722;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>The Lost Routes of Jorge Álvares</h1>
+    <p>化身16世纪传奇航海家，在泛黄的葡萄牙航海日志中破解星辰暗语、翻译失落的占卜符号，从潮汐图与殖民密信的夹缝间拼凑出通往东方的禁忌航线。每一道加密的经纬坐标，都藏着真实的香料战争秘辛；每一次语言转译的抉择，都将触发文明碰撞的迥异终章——是重现欧洲舰队首抵中国海岸的历史瞬间，还是揭开被抹去的另一种可能？当罗盘在磁暴中震颤时，唯有真正的破译者能听见深海之下的真相低语。</p>
+    <button onclick="showMessage()">加入冒险</button>
+    <div id="thankYouMessage">感谢你的加入！我们将第一时间通知你 Beta 测试开放！</div>
+  </div>
+  <script>
+    function showMessage() {
+      document.getElementById('thankYouMessage').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
